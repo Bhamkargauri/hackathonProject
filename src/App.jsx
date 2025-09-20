@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
-import { Outlet } from 'react-router'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { useState } from "react";
+import { Outlet } from "react-router";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const [refresh, setRefresh] = useState(false);
@@ -16,6 +18,6 @@ const App = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default App
+export default App;
